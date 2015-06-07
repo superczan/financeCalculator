@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        style="@style/encloser1"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cash Flow"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:textColor="#FF000000"
+           />
+        <EditText android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="Enter the value here"
+            android:layout_height="wrap_content"
+            android:id="@+id/perpetuityC"
+            style="@style/textbox"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        style="@style/encloser1"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Present Value"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:textColor="#FF000000"
+            />
+        <EditText android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="Enter the value here"
+            android:layout_height="wrap_content"
+            android:id="@+id/perpetuityPV"
+            style="@style/textbox"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        style="@style/encloser1"
+        >
+        <TextView android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Rate"
+            android:textColor="#FF000000"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            />
+        <EditText android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="Enter the value here"
+            android:layout_height="wrap_content"
+            android:id="@+id/perpetuityR"
+            style="@style/textbox"
+            />
+
+    </LinearLayout>
+
+    <TableLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        android:background="@drawable/shape">
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#FFFE6518"
+            >
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+
+                android:textColor="#FF000000"
+
+                android:text="CF" android:layout_weight="1" android:gravity="center"/>
+            <View android:layout_height="match_parent" android:layout_width="1dp" android:background="#000000"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF000000"
+
+                android:text="PV" android:layout_weight="1"/>
+             <View android:layout_height="match_parent" android:layout_width="1dp" android:background="#000000"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center"
+
+                android:textColor="#FF000000"
+
+                android:text="R" android:layout_weight="1"/>
+
+
+        </TableRow>
+        <TableRow android:layout_height="1dp"
+            android:layout_width="wrap_content"
+            android:background="#000000"
+            >
+            <View android:layout_height="1dp" android:layout_width="1dp" android:background="#000000"/>
+        </TableRow>
+        <TableRow android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+
+            >
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+
+                android:text="-" android:layout_weight="1" android:gravity="center" android:id="@+id/pvAnswer"/>
+            <View android:layout_height="match_parent" android:layout_width="1dp" android:background="#000000"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:gravity="center"
+                android:text="-" android:layout_weight="1" android:id="@+id/fvAnswer"/>
+
+            <View android:layout_height="match_parent" android:layout_width="1dp" android:background="#000000"/>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center"
+
+                android:text="-" android:layout_weight="1" android:id="@+id/rAnswer"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <Button android:layout_width="wrap_content"
+            android:id="@+id/calculate"
+            android:text="Calculate"
+            android:layout_height="wrap_content"
+            android:onClick="calculate1"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

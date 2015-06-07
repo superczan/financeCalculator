@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FIN 101</string>
+
+    <string name="menuItem1">Annuity</string>
+    <string name="menuItem2">Time Value of Money</string>
+    <string name="menuItem3">Annuity Due</string>
+    <string name="menuItem4">Perpetuity</string>
+    <color name="red">#FFEFEFEF</color>
+
+</resources>
